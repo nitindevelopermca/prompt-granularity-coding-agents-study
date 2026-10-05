@@ -35,7 +35,6 @@ Every condition ends with the same validation prompt (`V`), and every condition 
 │   └── evaluation/
 │       ├── SCORING_SHEET.md    # Full scoring rubric (functional, API, UX, a11y, perf, code)
 │       ├── SCORECARD.md        # Abbreviated per-run scorecard
-│       └── run-log-template.csv
 ├── starter/                     # Frozen Vite + React + TypeScript starter (no feature code)
 └── agents/                      # Archived application snapshots, one subtree per run
     ├── claude sonnet 5 high/
@@ -56,7 +55,7 @@ Every condition ends with the same validation prompt (`V`), and every condition 
 - **What the agent was asked to build** → [`experiment/spec/SPEC_FREEZE.md`](experiment/spec/SPEC_FREEZE.md) and [`starter/spec/`](starter/spec/) inside the frozen starter.
 - **Scoring instrument** (fuller than what is in `result.xlsx` today) → [`experiment/evaluation/SCORING_SHEET.md`](experiment/evaluation/SCORING_SHEET.md).
 - **Generated application code for any specific run** → `agents/<model>/r<N>/<condition>/starter/`, e.g. `agents/claude sonnet 5 high/r2/P6/starter/`.
-- **Analysis scripts, cleaned CSV/JSON, and figures used in the paper** → `../paper/analysis/` and `../paper/figures/` (sibling `paper/` folder; not duplicated here).
+- **Analysis scripts, cleaned CSV/JSON, and figures used in the paper** → see the analysis and figure-generation artifacts linked from this repository and the supplementary-material index.
 
 ## Reproducing or extending a run
 
@@ -73,6 +72,6 @@ Every condition ends with the same validation prompt (`V`), and every condition 
 
 ## Citation
 
-If you use this archive, please cite the accompanying article:
+If you use this archive before the accompanying article is formally published, please cite the manuscript and this repository. After publication, replace this placeholder with the final IEEE Software bibliographic citation and DOI.
 
-> N. Kumar and R. Guliani, "How Finely Should You Prompt a Coding Agent? Evidence from 36 Controlled Builds," *IEEE Software*, 2026.
+> N. Kumar and R. Guliani, "How Finely Should You Prompt a Coding Agent? Evidence from 36 Controlled Builds," manuscript submitted to *IEEE Software*, 2026.

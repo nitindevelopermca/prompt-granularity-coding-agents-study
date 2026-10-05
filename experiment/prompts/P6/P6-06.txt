@@ -1,0 +1,23 @@
+This is phase 6 of 6. Continue the same application. Preserve completed work. Do not re-explore the repository or re-read spec/. You already have the freeze, contracts, and UX from this session. Open only the source files you need to change.
+
+Work unit 9 — Cart screen
+
+Implement the specified cart screen. UX: spec/ux/ux-design-of-cart.png.
+
+- Heading with cart count (e.g. Your Cart (N)). Product table/list with image, title, price, quantity stepper, line total, Remove.
+- Quantity and removal update line totals, subtotal, total, and header count. Local frontend behavior after add-to-cart; no GET-cart API.
+- Continue Shopping returns to Products. Order summary shows subtotal, total, and a primary Place Order button.
+- Do not implement Place Order confirmation, shipping, payment, tax, or extra checkout pages in this work unit. The Place Order button may be visible but must not complete the order yet.
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+Work unit 10 — Place Order
+
+Implement Place Order on the cart/order screen.
+
+- Place Order produces in-app success confirmation only. No payment provider, shipping form, or additional checkout pages.
+- Do not add out-of-scope features (Forgot Password, extra store pages, Fake Store API, GET /comments as the review list, fetching all products with limit=0).
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+This is the last implementation phase. Do not re-explore the repository. Run the production build and typecheck once, then stop.

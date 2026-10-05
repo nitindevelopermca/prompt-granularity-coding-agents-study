@@ -1,0 +1,14 @@
+This is phase 2 of 10. Continue the same application. Preserve completed work. Do not re-explore the repository or re-read spec/. You already have the freeze, contracts, and UX from this session. Open only the source files you need to change.
+
+Work unit 2 — Authenticated app shell
+
+Create the minimum authenticated application shell needed for Products and Cart.
+
+- After login, a shared header: MyShop mark, text nav, cart icon with numeric badge (may be 0).
+- Routes or equivalent destinations for Products and Cart. Products may still be a placeholder aside from the header. Cart may still be a placeholder.
+- Meaningful document title and a non-empty meta description. Use semantic landmarks (header / main / nav or equivalent) and a sensible heading hierarchy.
+- Do not implement product fetching, search, cards, reviews, comments, add-to-cart API, or cart line items in this work unit.
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+Do not start later work units. Do not re-analyze spec/ or the file tree. Stop when this phase is implemented.

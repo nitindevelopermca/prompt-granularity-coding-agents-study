@@ -1,0 +1,11 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem 1.5rem;
+}

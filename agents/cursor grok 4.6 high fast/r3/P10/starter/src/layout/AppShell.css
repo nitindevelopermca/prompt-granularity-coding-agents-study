@@ -1,0 +1,114 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-shell-skip {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 2;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #fff;
+  color: #0055ff;
+  font-weight: 700;
+  text-decoration: none;
+  transform: translateY(-200%);
+}
+
+.app-shell-skip:focus {
+  transform: none;
+}
+
+.app-shell-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 72px;
+  padding: 0 28px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.app-shell-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-shell-mark {
+  width: 28px;
+  height: 28px;
+  color: #0055ff;
+}
+
+.app-shell-brand-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.app-shell-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.app-shell-nav-link {
+  color: #374151;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.app-shell-nav-link[aria-current='page'] {
+  color: #0055ff;
+}
+
+.app-shell-nav-inert {
+  color: #6b7280;
+  cursor: default;
+}
+
+.app-shell-cart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.app-shell-cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.app-shell-cart-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #0055ff;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+
+.app-shell-main {
+  padding: 32px 28px 48px;
+}
+
+.app-shell-main h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}

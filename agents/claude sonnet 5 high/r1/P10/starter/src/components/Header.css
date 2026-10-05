@@ -1,0 +1,133 @@
+.app-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.app-header-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.app-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.app-header-brand-icon {
+  color: #2f5fe0;
+  width: 26px;
+  height: 26px;
+}
+
+.app-header-brand-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.app-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.app-header-nav-link {
+  border: none;
+  background: transparent;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.app-header-nav-link:hover {
+  background-color: #f3f4f6;
+}
+
+.app-header-nav-link[aria-current='page'] {
+  color: #2f5fe0;
+  background-color: #eaf0fd;
+}
+
+.app-header-nav-link:focus-visible,
+.app-header-cart:focus-visible,
+.app-header-logout:focus-visible {
+  outline: 2px solid #2f5fe0;
+  outline-offset: 2px;
+}
+
+.app-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.app-header-cart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e3e9;
+  background-color: #ffffff;
+  color: #374151;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.app-header-cart:hover {
+  background-color: #f3f4f6;
+}
+
+.app-header-cart[aria-current='page'] {
+  border-color: #2f5fe0;
+  color: #2f5fe0;
+}
+
+.app-header-cart-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.app-header-cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+
+.app-header-logout {
+  border: 1px solid #e0e3e9;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.app-header-logout:hover {
+  background-color: #f3f4f6;
+}

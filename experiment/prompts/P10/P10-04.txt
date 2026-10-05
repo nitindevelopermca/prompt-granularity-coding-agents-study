@@ -1,0 +1,13 @@
+This is phase 4 of 10. Continue the same application. Preserve completed work. Do not re-explore the repository or re-read spec/. You already have the freeze, contracts, and UX from this session. Open only the source files you need to change.
+
+Work unit 4 — Product card & image gallery
+
+Implement each product card from the specification freeze and listing UX. UX: spec/ux/ux-design-of-product-detail.png, spec/ux/ux-design-of-product-listing.png, spec/ux/ux-design-of-product-thumbnails.png. Product fields: spec/apis_contract/ (products/reviews contract).
+
+- Each card: main image (thumbnail or images[0]), thumbnail strip from images[] (one thumb is OK), title, description, price, discount percentage, rating/review control, brand when available (fallback if missing), Add to Cart as a full-width primary button.
+- Activating a thumbnail updates that product's main image. Accessible names on thumbs (e.g. Image 2 of 3). Handle missing and broken images so the card stays usable.
+- In this work unit, Add to Cart and the rating/review control must be visible. Do not implement POST /carts/add or the review modal in this work unit.
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+Do not start later work units. Do not re-analyze spec/ or the file tree. Stop when this phase is implemented.

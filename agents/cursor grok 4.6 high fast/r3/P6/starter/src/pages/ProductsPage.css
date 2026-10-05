@@ -1,0 +1,106 @@
+.products-main {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.products-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 24px;
+  margin-bottom: 24px;
+}
+
+.products-header h1 {
+  margin: 0 0 6px;
+  font-size: 1.75rem;
+  letter-spacing: -0.03em;
+}
+
+.products-count {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.products-search {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: min(100%, 280px);
+}
+
+.products-search label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.products-search input {
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #111827;
+  font: inherit;
+}
+
+.products-search input::placeholder {
+  color: #9aa3b2;
+}
+
+.products-status {
+  margin: 0 0 16px;
+  color: #4b5563;
+}
+
+.products-error {
+  margin: 0 0 16px;
+  color: #dc2626;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.products-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.products-more button,
+.products-retry {
+  min-width: 160px;
+  height: 44px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.products-more button:hover:not(:disabled),
+.products-retry:hover {
+  background: #1d4ed8;
+}
+
+.products-more button:disabled {
+  opacity: 0.72;
+  cursor: wait;
+}
+
+.products-main :focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}

@@ -1,0 +1,99 @@
+.app-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.app-header-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  width: min(100%, 72rem);
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+}
+
+.app-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  justify-self: start;
+  color: var(--color-ink);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.app-brand-mark {
+  width: 1.7rem;
+  height: 1.7rem;
+  color: var(--color-primary);
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.app-nav a {
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.app-nav a[aria-current='page'] {
+  color: var(--color-primary);
+}
+
+.app-nav-inert {
+  color: var(--color-ink);
+}
+
+.app-cart {
+  position: relative;
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.app-cart-icon {
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
+.app-cart-badge {
+  position: absolute;
+  top: 0.05rem;
+  right: 0.05rem;
+  min-width: 1.05rem;
+  height: 1.05rem;
+  padding: 0 0.22rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.05rem;
+  text-align: center;
+}
+
+@media (max-width: 40rem) {
+  .app-header-inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .app-nav {
+    grid-column: 1 / -1;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+}

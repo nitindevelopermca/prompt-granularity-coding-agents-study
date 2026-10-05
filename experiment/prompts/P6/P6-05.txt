@@ -1,0 +1,14 @@
+This is phase 5 of 6. Continue the same application. Preserve completed work. Do not re-explore the repository or re-read spec/. You already have the freeze, contracts, and UX from this session. Open only the source files you need to change.
+
+Work unit 8 — Cart integration & header state
+
+Implement Add to Cart using POST https://dummyjson.com/carts/add. API: spec/apis_contract/ (add-to-cart contract).
+
+- Body includes authenticated userId (login response id), selected product id, and quantity.
+- Maintain frontend cart state. Update the header cart count on successful add.
+- On add-to-cart API failure, keep existing valid cart state and show an error. Do not require GET /carts (DummyJSON has no session GET-cart).
+- Do not implement the cart/order screen line items, stepper, totals, or Place Order in this work unit. Cart destination may remain a placeholder.
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+Do not start later work units. Do not re-analyze spec/ or the file tree. Stop when this phase is implemented.

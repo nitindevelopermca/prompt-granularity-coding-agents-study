@@ -1,0 +1,201 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mainImageWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f9fafb;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.imageFallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  width: 100%;
+  height: 100%;
+  color: #9ca3af;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.thumbStrip {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.thumbButton {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.thumbButton:hover {
+  border-color: #93a5f0;
+}
+
+.thumbButton:focus-visible {
+  outline: 2px solid #2f5eff;
+  outline-offset: 2px;
+}
+
+.thumbActive {
+  border-color: #2f5eff;
+}
+
+.thumbImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.thumbFallback {
+  color: #9ca3af;
+  font-size: 0.75rem;
+}
+
+.title {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.3;
+}
+
+.description {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #6b7280;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #dc2626;
+}
+
+.originalPrice {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.discountBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+}
+
+.ratingButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: fit-content;
+  border: none;
+  background: none;
+  padding: 0.15rem 0;
+  color: #b45309;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ratingButton:hover {
+  text-decoration: underline;
+}
+
+.ratingButton:focus-visible {
+  outline: 2px solid #2f5eff;
+  outline-offset: 2px;
+}
+
+.reviewCount {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.brand {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.addToCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #2f5eff;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.addToCart:hover {
+  background: #2549cc;
+}
+
+.addToCart:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: 2px;
+}
+
+.addToCart:disabled {
+  background: #93a5f0;
+  cursor: not-allowed;
+}
+
+.addToCartError {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 0.8rem;
+}

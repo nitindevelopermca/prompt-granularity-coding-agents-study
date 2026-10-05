@@ -1,0 +1,25 @@
+.star-rating {
+  display: inline-flex;
+  gap: 0.08rem;
+}
+
+.star-rating-star {
+  position: relative;
+  width: 0.95rem;
+  height: 0.95rem;
+  color: #d1d5db;
+}
+
+.star-rating-empty,
+.star-rating-fill svg {
+  display: block;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.star-rating-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  overflow: hidden;
+  color: #f5b301;
+}

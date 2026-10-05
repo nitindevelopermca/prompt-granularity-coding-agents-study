@@ -1,0 +1,24 @@
+This is phase 4 of 6. Continue the same application. Preserve completed work. Do not re-explore the repository or re-read spec/. You already have the freeze, contracts, and UX from this session. Open only the source files you need to change.
+
+Work unit 6 — Reviews & review modal
+
+Implement the review modal opened from each product's rating/review control. UX: spec/ux/ux-design-of-review-popup.png. Reviews: that product's reviews[] from the already loaded product (reviewerName, rating, comment, date). Do not call GET /comments for reviews. Do not invent DummyJSON reviews.
+
+- Overlay dialog with a Reviews title and a close control. Empty-review state.
+- Dialog semantics, keyboard operation, Escape to close, and focus management so background is not the tab target while open.
+- Do not implement add-comment in this work unit. A form placeholder must not submit a comment yet.
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+Work unit 7 — Add comment
+
+Add comment functionality inside the review modal using POST https://dummyjson.com/comments/add. API: spec/apis_contract/05_Add_Comment.md.
+
+- Send { "body": "<comment text>", "postId": <product id>, "userId": <login id> }.
+- Validate non-empty input. Optional 1–5 star rating in the UI; if collected, show it on the local review row (the POST has no rating field).
+- Handle loading and POST failure (keep existing reviews and show an error).
+- After HTTP success, append the comment to that product's review list in frontend state (the API does not persist).
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+Do not start later work units. Do not re-analyze spec/ or the file tree. Stop when this phase is implemented.

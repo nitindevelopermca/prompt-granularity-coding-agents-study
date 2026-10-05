@@ -1,0 +1,254 @@
+.cart-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.cart-page__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 20px;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 60px 0;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.cart-items {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th {
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #6b7280;
+  padding: 8px 8px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cart-table td {
+  padding: 14px 8px;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.cart-table__product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.cart-table__image,
+.cart-table__image-fallback {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f9fafb;
+  flex-shrink: 0;
+}
+
+.cart-table__image-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.cart-table__title {
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.9rem;
+}
+
+.cart-table__price,
+.cart-table__line-total {
+  color: #111827;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.qty-stepper button {
+  background: #f9fafb;
+  border: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.qty-stepper button:hover:not(:disabled) {
+  background: #f3f4f6;
+}
+
+.qty-stepper button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.qty-stepper button:focus-visible {
+  outline: 2px solid #2f5fff;
+  outline-offset: 1px;
+}
+
+.qty-stepper span {
+  min-width: 32px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.cart-table__remove {
+  display: block;
+  margin-top: 6px;
+  background: none;
+  border: none;
+  color: #2f5fff;
+  cursor: pointer;
+  font-size: 0.82rem;
+  padding: 0;
+}
+
+.cart-table__remove:hover {
+  text-decoration: underline;
+}
+
+.cart-table__remove:focus-visible {
+  outline: 2px solid #2f5fff;
+  outline-offset: 2px;
+}
+
+.cart-continue-btn {
+  background: none;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 18px;
+  color: #374151;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-continue-btn:hover {
+  background: #f9fafb;
+}
+
+.cart-continue-btn:focus-visible {
+  outline: 2px solid #2f5fff;
+  outline-offset: 2px;
+}
+
+.cart-continue-btn--inline {
+  margin-top: 16px;
+}
+
+.cart-summary {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cart-summary__title {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.cart-summary__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.cart-summary__row--total {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 6px;
+  padding-top: 12px;
+  font-weight: 700;
+  color: #111827;
+  font-size: 1.05rem;
+}
+
+.cart-summary__place-order {
+  width: 100%;
+  margin-top: 16px;
+  background: #2f5fff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.cart-summary__place-order:hover {
+  background: #244fdb;
+}
+
+.cart-summary__place-order:focus-visible {
+  outline: 2px solid #244fdb;
+  outline-offset: 2px;
+}
+
+.cart-success {
+  max-width: 480px;
+  margin: 60px auto;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 40px 32px;
+}
+
+.cart-success__title {
+  color: #15803d;
+  font-size: 1.4rem;
+  margin: 0 0 12px;
+}
+
+.cart-success__message {
+  color: #374151;
+  margin: 0 0 24px;
+}
+
+@media (max-width: 820px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}

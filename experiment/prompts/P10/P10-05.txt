@@ -1,0 +1,14 @@
+This is phase 5 of 10. Continue the same application. Preserve completed work. Do not re-explore the repository or re-read spec/. You already have the freeze, contracts, and UX from this session. Open only the source files you need to change.
+
+Work unit 5 — Product search
+
+Implement product search using GET https://dummyjson.com/products/search?q=. API: spec/apis_contract/04_Products_Search_Pagination.md.
+
+- Search field on the listing view as in the Product Listing UX.
+- Display matching products using the existing product-card implementation.
+- Handle loading, search API failure, and no-match states. Empty query returns to the paginated catalog; do not perform an empty search.
+- Do not destroy already loaded catalog state if the user clears search.
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+Do not start later work units. Do not re-analyze spec/ or the file tree. Stop when this phase is implemented.

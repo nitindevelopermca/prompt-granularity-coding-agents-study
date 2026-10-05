@@ -1,0 +1,17 @@
+VALIDATION PROMPT — identical for P1, P3, P6, and P10. Send only after the last implementation prompt has finished.
+
+Do not start a fresh repository analysis. Use the spec, contracts, and UX already read in this session.
+
+Review the entire implementation against the specification freeze, the DummyJSON API contracts, and the in-scope UX.
+
+Complete and correct only in-scope gaps:
+- Flow: Login → Products (page 1) → Load more → Search → Reviews → Add comment → Add to Cart → Cart → Modify Cart → Place Order.
+- Lazy load uses limit=10 and skip; does not fetch all products with limit=0.
+- Search uses /products/search; empty query returns to the catalog.
+- Thumbnail strip uses images[]; click changes the main image.
+- Add comment uses POST /comments/add and appends locally.
+- Accessibility, error handling, responsive layout, SEO, performance, TypeScript/React quality as in the freeze.
+
+Run the production build and typecheck once. Exercise the required flow. Fix in-scope issues you discover.
+
+Do not add out-of-scope features (Forgot Password, shipping form, extra pages, payment, Fake Store API, GET /comments as the review list). Stop when the in-scope application builds and the required flow works, or when remaining failures cannot be fixed without out-of-scope work.

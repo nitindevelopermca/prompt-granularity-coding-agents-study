@@ -1,0 +1,100 @@
+.app-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.app-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.app-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+}
+
+.app-header__brand-icon {
+  font-size: 1.5rem;
+  color: #2f5fff;
+}
+
+.app-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.app-header__link {
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 4px 2px;
+}
+
+.app-header__link:hover {
+  color: #2f5fff;
+}
+
+.app-header__link--active {
+  color: #2f5fff;
+}
+
+.app-header__link--inert {
+  color: #9ca3af;
+  cursor: default;
+}
+
+.app-header__link--inert:hover {
+  color: #9ca3af;
+}
+
+.app-header__link:focus-visible,
+.app-header__brand:focus-visible,
+.app-header__cart:focus-visible {
+  outline: 2px solid #2f5fff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.app-header__cart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 4px;
+}
+
+.app-header__cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #2f5fff;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}

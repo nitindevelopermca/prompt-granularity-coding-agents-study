@@ -1,0 +1,331 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.emptyState {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tableWrapper {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  text-align: left;
+  font-size: 0.82rem;
+  color: #6b7280;
+  font-weight: 700;
+  padding: 0 0 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table td {
+  padding: 1rem 0.5rem 1rem 0;
+  vertical-align: middle;
+}
+
+.productCell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 220px;
+}
+
+.thumbnail {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  background: #f9fafb;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.productTitle {
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.9rem;
+}
+
+.priceCell {
+  color: #374151;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.quantityCell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.15rem;
+}
+
+.stepperButton {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #f3f4f6;
+  color: #111827;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepperButton:hover:not(:disabled) {
+  background: #e5e7eb;
+}
+
+.stepperButton:focus-visible {
+  outline: 2px solid #2f5eff;
+  outline-offset: 2px;
+}
+
+.stepperButton:disabled {
+  color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.quantityValue {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.9rem;
+}
+
+.removeButton {
+  border: none;
+  background: none;
+  color: #2f5eff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.removeButton:hover {
+  text-decoration: underline;
+}
+
+.removeButton:focus-visible {
+  outline: 2px solid #2f5eff;
+  outline-offset: 2px;
+}
+
+.totalCell {
+  font-weight: 700;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.continueShoppingLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+  color: #2f5eff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.continueShoppingLink:hover {
+  text-decoration: underline;
+}
+
+.continueShoppingLink:focus-visible {
+  outline: 2px solid #2f5eff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.summary {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.summaryHeading {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.summaryTotal {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.placeOrderButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #2f5eff;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.placeOrderButton:hover:not(:disabled) {
+  background: #2549cc;
+}
+
+.placeOrderButton:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: 2px;
+}
+
+.placeOrderButton:disabled {
+  background: #93a5f0;
+  cursor: not-allowed;
+}
+
+.successPanel {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 480px;
+  margin: 2rem auto;
+}
+
+.successIcon {
+  color: #16a34a;
+}
+
+.successHeading {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.successHeading:focus-visible {
+  outline: none;
+}
+
+.successText {
+  margin: 0;
+  color: #6b7280;
+}
+
+.continueShoppingButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  background: #2f5eff;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.continueShoppingButton:hover {
+  background: #2549cc;
+}
+
+.continueShoppingButton:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: 2px;
+}

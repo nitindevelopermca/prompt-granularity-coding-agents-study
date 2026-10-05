@@ -1,0 +1,115 @@
+.products-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 32px 60px;
+}
+
+.products-page__toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.products-page__toolbar h1 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+.products-page__count {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.products-page__search {
+  display: flex;
+  gap: 8px;
+}
+
+.products-page__search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  padding: 0 10px;
+  min-width: 260px;
+}
+
+.products-page__search-icon {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.products-page__search-input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 8px;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+.products-page__search-clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  display: flex;
+  padding: 4px;
+}
+
+.products-page__search-submit {
+  white-space: nowrap;
+}
+
+.products-page__loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-muted);
+  padding: 40px 0;
+  justify-content: center;
+}
+
+.products-page__initial-error {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 24px;
+}
+
+.products-page__empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 40px 0;
+}
+
+.products-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.products-page__load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.products-page__load-more-error {
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.products-page__end-of-list {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-top: 28px;
+  font-size: 0.9rem;
+}

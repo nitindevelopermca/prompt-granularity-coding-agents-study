@@ -1,0 +1,12 @@
+This is phase 10 of 10. Continue the same application. Preserve completed work. Do not re-explore the repository or re-read spec/. You already have the freeze, contracts, and UX from this session. Open only the source files you need to change.
+
+Work unit 10 — Place Order
+
+Implement Place Order on the cart/order screen.
+
+- Place Order produces in-app success confirmation only. No payment provider, shipping form, or additional checkout pages.
+- Do not add out-of-scope features (Forgot Password, extra store pages, Fake Store API, GET /comments as the review list, fetching all products with limit=0).
+
+Apply specification-freeze accessibility and error-handling rules to the work of this work unit only.
+
+This is the last implementation phase. Do not re-explore the repository. Run the production build and typecheck once, then stop.

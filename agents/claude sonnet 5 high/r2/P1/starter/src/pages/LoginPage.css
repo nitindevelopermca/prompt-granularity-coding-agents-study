@@ -1,0 +1,120 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 40px 36px;
+}
+
+.login-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.login-brand__icon {
+  color: var(--color-primary);
+}
+
+.login-brand__name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+}
+
+.login-form-error {
+  margin-bottom: 18px;
+}
+
+.login-field {
+  margin-bottom: 18px;
+}
+
+.login-field label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.login-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0 12px;
+  background: #fff;
+}
+
+.login-input-wrapper:focus-within {
+  border-color: var(--color-primary);
+}
+
+.login-input-wrapper--invalid {
+  border-color: var(--color-danger);
+}
+
+.login-input-icon {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.login-input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  font-size: 1rem;
+  background: transparent;
+  min-width: 0;
+}
+
+.login-toggle-visibility {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  display: flex;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.login-field-error {
+  color: var(--color-danger);
+  font-size: 0.85rem;
+  margin: 6px 0 0;
+}
+
+.login-submit {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 1.05rem;
+  padding: 13px 18px;
+}
